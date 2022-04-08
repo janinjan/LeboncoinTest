@@ -10,7 +10,6 @@
 		3D933FDB2800E36B0002B11D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDA2800E36B0002B11D /* AppDelegate.swift */; };
 		3D933FDD2800E36B0002B11D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDC2800E36B0002B11D /* SceneDelegate.swift */; };
 		3D933FDF2800E36B0002B11D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDE2800E36B0002B11D /* ViewController.swift */; };
-		3D933FE22800E36B0002B11D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D933FE02800E36B0002B11D /* Main.storyboard */; };
 		3D933FE42800E36E0002B11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D933FE32800E36E0002B11D /* Assets.xcassets */; };
 		3D933FE72800E36E0002B11D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D933FE52800E36E0002B11D /* LaunchScreen.storyboard */; };
 		3D933FF22800E36F0002B11D /* LeboncoinTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FF12800E36F0002B11D /* LeboncoinTestTests.swift */; };
@@ -40,7 +39,6 @@
 		3D933FDA2800E36B0002B11D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D933FDC2800E36B0002B11D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3D933FDE2800E36B0002B11D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3D933FE12800E36B0002B11D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D933FE32800E36E0002B11D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D933FE62800E36E0002B11D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D933FE82800E36E0002B11D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +97,8 @@
 		3D933FD92800E36B0002B11D /* LeboncoinTest */ = {
 			isa = PBXGroup;
 			children = (
-				3D933FDA2800E36B0002B11D /* AppDelegate.swift */,
-				3D933FDC2800E36B0002B11D /* SceneDelegate.swift */,
-				3D933FDE2800E36B0002B11D /* ViewController.swift */,
-				3D933FE02800E36B0002B11D /* Main.storyboard */,
-				3D933FE32800E36E0002B11D /* Assets.xcassets */,
-				3D933FE52800E36E0002B11D /* LaunchScreen.storyboard */,
-				3D933FE82800E36E0002B11D /* Info.plist */,
+				3D93400C2800E7590002B11D /* SupportingFiles */,
+				3D93400B2800E74B0002B11D /* Sources */,
 			);
 			path = LeboncoinTest;
 			sourceTree = "<group>";
@@ -127,6 +120,26 @@
 			path = LeboncoinTestUITests;
 			sourceTree = "<group>";
 		};
+		3D93400B2800E74B0002B11D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3D933FDE2800E36B0002B11D /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3D93400C2800E7590002B11D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3D933FE32800E36E0002B11D /* Assets.xcassets */,
+				3D933FE52800E36E0002B11D /* LaunchScreen.storyboard */,
+				3D933FE82800E36E0002B11D /* Info.plist */,
+				3D933FDA2800E36B0002B11D /* AppDelegate.swift */,
+				3D933FDC2800E36B0002B11D /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +150,7 @@
 				3D933FD32800E36B0002B11D /* Sources */,
 				3D933FD42800E36B0002B11D /* Frameworks */,
 				3D933FD52800E36B0002B11D /* Resources */,
+				3D93400A2800E4BA0002B11D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -233,7 +247,6 @@
 			files = (
 				3D933FE72800E36E0002B11D /* LaunchScreen.storyboard in Resources */,
 				3D933FE42800E36E0002B11D /* Assets.xcassets in Resources */,
-				3D933FE22800E36B0002B11D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +265,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D93400A2800E4BA0002B11D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D933FD32800E36B0002B11D /* Sources */ = {
@@ -297,14 +330,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3D933FE02800E36B0002B11D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D933FE12800E36B0002B11D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3D933FE52800E36E0002B11D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -367,7 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +447,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -441,10 +466,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P6FCPFN549;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LeboncoinTest/Info.plist;
+				INFOPLIST_FILE = LeboncoinTest/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -469,10 +494,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P6FCPFN549;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LeboncoinTest/Info.plist;
+				INFOPLIST_FILE = LeboncoinTest/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -497,7 +522,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P6FCPFN549;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.culhaoglujanin.LeboncoinTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -517,7 +542,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P6FCPFN549;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.culhaoglujanin.LeboncoinTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

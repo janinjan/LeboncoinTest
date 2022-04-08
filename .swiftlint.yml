@@ -1,0 +1,13 @@
+disabled_rules: # rule identifiers to exclude from running
+ - trailing_whitespace
+ - unused_optional_binding
+identifier_name:
+  min_length: 3
+  excluded: # excluded via string array
+    - id
+line_length:
+    warning: 140
+    error: 200
+excluded:
+ - Pods
+
