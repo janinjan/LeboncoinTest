@@ -8,16 +8,16 @@
 import Foundation
 
 final class AdListViewModel {
-
+    
     // MARK: - Properties
     
     let title = Strings.adListTitle
     var ads: [AdModel] = []
-
+    
     // MARK: - Usecases
-
+    
     private let adUsecase: AdUsecaseProtocol
-
+    
     // MARK: - Initializer
 
     init(adUsecase: AdUsecaseProtocol) {
@@ -25,8 +25,12 @@ final class AdListViewModel {
     }
     
     // MARK: - Methods
-
+    
     func getAds() async {
         ads = await adUsecase.retrieveAds().map({$0.toUI})
+    }
+    
+    func didTapAdCell(at index: Int) -> AdModel {
+        return ads[index]
     }
 }

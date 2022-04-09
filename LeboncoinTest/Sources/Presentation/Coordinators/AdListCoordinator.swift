@@ -33,6 +33,18 @@ final class AdListCoordinator: Coordinator {
         navigationController.setViewControllers([adListViewController], animated: false)
     }
 
+    func startDetail(with adDetail: AdModel) {
+        let viewModel = AdDetailViewModel(adDetail: adDetail)
+        let adDetailViewController = AdDetailViewController(viewModel: viewModel)
+        adDetailViewController.coordinator = self
+
+        navigationController.pushViewController(adDetailViewController, animated: true)
+    }
+
+    func didTapCell(_ adDetail: AdModel) {
+        startDetail(with: adDetail)
+    }
+
     private func setupAdListViewModelDependencies() -> AdListViewModel {
         let networkClient = NetworkClient()
         let adService = AdService(networkClient: networkClient)

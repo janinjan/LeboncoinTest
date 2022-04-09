@@ -22,6 +22,7 @@ class AdListViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.tableFooterView = UIView()
         tableView.tableHeaderView = UIView()
+        tableView.delegate = self
 
         return tableView
     }()
@@ -83,5 +84,15 @@ class AdListViewController: UIViewController {
         }
 
         tableView.dataSource = dataSource
+    }
+}
+
+// MARK: - extension UITableViewDelegate
+
+extension AdListViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let adDetail = viewModel.didTapAdCell(at: indexPath.row)
+        coordinator?.didTapCell(adDetail)
     }
 }

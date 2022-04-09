@@ -21,6 +21,8 @@
 		3D4DA14E280111000039EE02 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA14D280111000039EE02 /* DateFormatter+Extension.swift */; };
 		3D4DA150280111F00039EE02 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA14F280111F00039EE02 /* String+Extension.swift */; };
 		3D6094072801F21D007CC14A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6094062801F21D007CC14A /* UIImageView+Extension.swift */; };
+		3D60940928021155007CC14A /* AdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60940828021155007CC14A /* AdDetailViewController.swift */; };
+		3D60940B28021186007CC14A /* AdDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60940A28021186007CC14A /* AdDetailViewModel.swift */; };
 		3D933FDB2800E36B0002B11D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDA2800E36B0002B11D /* AppDelegate.swift */; };
 		3D933FDD2800E36B0002B11D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDC2800E36B0002B11D /* SceneDelegate.swift */; };
 		3D933FE42800E36E0002B11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D933FE32800E36E0002B11D /* Assets.xcassets */; };
@@ -92,6 +94,8 @@
 		3D4DA14D280111000039EE02 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
 		3D4DA14F280111F00039EE02 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		3D6094062801F21D007CC14A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		3D60940828021155007CC14A /* AdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailViewController.swift; sourceTree = "<group>"; };
+		3D60940A28021186007CC14A /* AdDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailViewModel.swift; sourceTree = "<group>"; };
 		3D933FD72800E36B0002B11D /* LeboncoinTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeboncoinTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D933FDA2800E36B0002B11D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D933FDC2800E36B0002B11D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -403,6 +407,7 @@
 			isa = PBXGroup;
 			children = (
 				3D9886A6280197B900FF8D10 /* AdListViewModel.swift */,
+				3D60940A28021186007CC14A /* AdDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -411,6 +416,7 @@
 			isa = PBXGroup;
 			children = (
 				3D9886A92801980600FF8D10 /* AdListViewController.swift */,
+				3D60940828021155007CC14A /* AdDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -635,6 +641,7 @@
 			files = (
 				3D6094072801F21D007CC14A /* UIImageView+Extension.swift in Sources */,
 				3D9886A0280184A500FF8D10 /* AdUsecase.swift in Sources */,
+				3D60940928021155007CC14A /* AdDetailViewController.swift in Sources */,
 				3D9886AA2801980600FF8D10 /* AdListViewController.swift in Sources */,
 				3D9340152800EA820002B11D /* ServiceError.swift in Sources */,
 				3D9886A428018AC800FF8D10 /* Logger.swift in Sources */,
@@ -646,6 +653,7 @@
 				3D9886B72801B0FA00FF8D10 /* Localizable.swift in Sources */,
 				3D9340222800F3FD0002B11D /* AdService.swift in Sources */,
 				3D9886B1280199D800FF8D10 /* AdListCoordinator.swift in Sources */,
+				3D60940B28021186007CC14A /* AdDetailViewModel.swift in Sources */,
 				3DD9666B2801C75D002A3834 /* UITableView+Extension.swift in Sources */,
 				3D9886CA2801C00200FF8D10 /* AdModel.swift in Sources */,
 				3D4DA14E280111000039EE02 /* DateFormatter+Extension.swift in Sources */,
