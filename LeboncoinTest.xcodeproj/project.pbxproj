@@ -56,6 +56,7 @@
 		3DD9666B2801C75D002A3834 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9666A2801C75D002A3834 /* UITableView+Extension.swift */; };
 		3DD9666E2801C7A2002A3834 /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9666D2801C7A2002A3834 /* ReusableViewProtocol.swift */; };
 		3DD966702801C7D1002A3834 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9666F2801C7D1002A3834 /* UITableViewCell+Extension.swift */; };
+		3DD966722801D08E002A3834 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD966712801D08E002A3834 /* TableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 		3DD9666A2801C75D002A3834 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		3DD9666D2801C7A2002A3834 /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
 		3DD9666F2801C7D1002A3834 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		3DD966712801D08E002A3834 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -468,6 +470,7 @@
 			isa = PBXGroup;
 			children = (
 				3DD9666D2801C7A2002A3834 /* ReusableViewProtocol.swift */,
+				3DD966712801D08E002A3834 /* TableViewDataSource.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -663,6 +666,7 @@
 				3D4DA12F280108680039EE02 /* CategoryRequest.swift in Sources */,
 				3D93401E2800EC320002B11D /* URLSession+Extension.swift in Sources */,
 				3D933FDD2800E36B0002B11D /* SceneDelegate.swift in Sources */,
+				3DD966722801D08E002A3834 /* TableViewDataSource.swift in Sources */,
 				3D9340172800EA9B0002B11D /* HTTPRequestProtocol.swift in Sources */,
 				3D93401B2800EB270002B11D /* NetworkClient.swift in Sources */,
 			);
