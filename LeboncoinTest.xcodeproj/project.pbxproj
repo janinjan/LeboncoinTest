@@ -49,6 +49,7 @@
 		3D9886B1280199D800FF8D10 /* AdListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9886B0280199D800FF8D10 /* AdListCoordinator.swift */; };
 		3D9886B72801B0FA00FF8D10 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9886B62801B0FA00FF8D10 /* Localizable.swift */; };
 		3D9886B92801B1AC00FF8D10 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D9886BB2801B1AC00FF8D10 /* Localizable.strings */; };
+		3D9886BF2801B58000FF8D10 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9886BE2801B58000FF8D10 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +117,7 @@
 		3D9886B62801B0FA00FF8D10 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		3D9886BA2801B1AC00FF8D10 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3D9886BC2801B1AF00FF8D10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3D9886BE2801B58000FF8D10 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +303,7 @@
 		3D93400E2800E9A50002B11D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				3D9886BD2801B57000FF8D10 /* Extensions */,
 				3D9886A8280197D800FF8D10 /* ViewControllers */,
 				3D9886A5280197A000FF8D10 /* ViewModels */,
 				3D9886AB2801992F00FF8D10 /* Coordinators */,
@@ -409,6 +412,14 @@
 				3D9886B62801B0FA00FF8D10 /* Localizable.swift */,
 			);
 			path = Localizable;
+			sourceTree = "<group>";
+		};
+		3D9886BD2801B57000FF8D10 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3D9886BE2801B58000FF8D10 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -589,6 +600,7 @@
 				3D4DA131280108910039EE02 /* CategoryService.swift in Sources */,
 				3D4DA13F28010D650039EE02 /* AdServiceProtocol.swift in Sources */,
 				3D4DA150280111F00039EE02 /* String+Extension.swift in Sources */,
+				3D9886BF2801B58000FF8D10 /* UIColor+Extension.swift in Sources */,
 				3D9886AD2801995200FF8D10 /* AppCoordinator.swift in Sources */,
 				3D4DA14128010D8A0039EE02 /* CategoryServiceProtocol.swift in Sources */,
 				3D4DA14828010E820039EE02 /* AdDomain.swift in Sources */,

@@ -28,6 +28,8 @@ final class AdListCoordinator: Coordinator {
         let adListViewController = AdListViewController(viewModel: setupAdListViewModelDependencies())
         adListViewController.coordinator = self
 
+        configureNavigation()
+
         navigationController.setViewControllers([adListViewController], animated: false)
     }
 
@@ -39,5 +41,16 @@ final class AdListCoordinator: Coordinator {
         let usecase = AdUsecase(repository: adRepository)
 
         return AdListViewModel(adUsecase: usecase)
+    }
+
+    private func configureNavigation() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.lbcBlack]
+        appearance.shadowColor = .clear
+
+        let navigationBar = navigationController.navigationBar
+        navigationBar.standardAppearance = appearance
+        navigationBar.scrollEdgeAppearance = appearance
     }
 }

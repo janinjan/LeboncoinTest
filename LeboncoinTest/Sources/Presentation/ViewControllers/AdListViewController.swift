@@ -30,12 +30,13 @@ class AdListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = viewModel.title
-        view.backgroundColor = .white
+        setupUI()
+    }
 
-        Task { @MainActor in
-            await viewModel.getAds()
-            print(viewModel.ads)
-        }
+    // MARK: - Methods
+
+    private func setupUI() {
+        title = viewModel.title
+        view.backgroundColor = .lbcWhite
     }
 }
