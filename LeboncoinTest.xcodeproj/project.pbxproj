@@ -41,6 +41,8 @@
 		3D9340312800F7D00002B11D /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9340302800F7D00002B11D /* FakeResponseData.swift */; };
 		3D9340332800F8070002B11D /* Listing.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D9340322800F8070002B11D /* Listing.json */; };
 		3D9340362800F92E0002B11D /* AdServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9340352800F92E0002B11D /* AdServiceTestCase.swift */; };
+		3D9886A0280184A500FF8D10 /* AdUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98869F280184A500FF8D10 /* AdUsecase.swift */; };
+		3D9886A428018AC800FF8D10 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9886A328018AC800FF8D10 /* Logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		3D9340302800F7D00002B11D /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
 		3D9340322800F8070002B11D /* Listing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Listing.json; sourceTree = "<group>"; };
 		3D9340352800F92E0002B11D /* AdServiceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdServiceTestCase.swift; sourceTree = "<group>"; };
+		3D98869F280184A500FF8D10 /* AdUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdUsecase.swift; sourceTree = "<group>"; };
+		3D9886A328018AC800FF8D10 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 		3D4DA14228010E2E0039EE02 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				3D98869E2801849000FF8D10 /* Usecases */,
 				3D4DA14328010E390039EE02 /* Protocols */,
 				3D4DA14628010E6F0039EE02 /* Models */,
 			);
@@ -262,6 +267,7 @@
 				3D933FE82800E36E0002B11D /* Info.plist */,
 				3D933FDA2800E36B0002B11D /* AppDelegate.swift */,
 				3D933FDC2800E36B0002B11D /* SceneDelegate.swift */,
+				3D9886A328018AC800FF8D10 /* Logger.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -344,6 +350,14 @@
 				3D9340352800F92E0002B11D /* AdServiceTestCase.swift */,
 			);
 			path = AdServiceTests;
+			sourceTree = "<group>";
+		};
+		3D98869E2801849000FF8D10 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				3D98869F280184A500FF8D10 /* AdUsecase.swift */,
+			);
+			path = Usecases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,7 +513,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9886A0280184A500FF8D10 /* AdUsecase.swift in Sources */,
 				3D9340152800EA820002B11D /* ServiceError.swift in Sources */,
+				3D9886A428018AC800FF8D10 /* Logger.swift in Sources */,
 				3D9340132800EA710002B11D /* HTTPMethod.swift in Sources */,
 				3D4DA14528010E560039EE02 /* AdProtocols.swift in Sources */,
 				3D9340242800F4750002B11D /* AdRequest.swift in Sources */,
