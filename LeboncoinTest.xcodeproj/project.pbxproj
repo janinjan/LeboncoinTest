@@ -52,6 +52,10 @@
 		3D9886BF2801B58000FF8D10 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9886BE2801B58000FF8D10 /* UIColor+Extension.swift */; };
 		3D9886CA2801C00200FF8D10 /* AdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9886C92801C00200FF8D10 /* AdModel.swift */; };
 		3D9886CC2801C02500FF8D10 /* AdDomain+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9886CB2801C02500FF8D10 /* AdDomain+Extension.swift */; };
+		3DD966692801C6FD002A3834 /* AdListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD966682801C6FD002A3834 /* AdListTableViewCell.swift */; };
+		3DD9666B2801C75D002A3834 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9666A2801C75D002A3834 /* UITableView+Extension.swift */; };
+		3DD9666E2801C7A2002A3834 /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9666D2801C7A2002A3834 /* ReusableViewProtocol.swift */; };
+		3DD966702801C7D1002A3834 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9666F2801C7D1002A3834 /* UITableViewCell+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +126,10 @@
 		3D9886BE2801B58000FF8D10 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		3D9886C92801C00200FF8D10 /* AdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdModel.swift; sourceTree = "<group>"; };
 		3D9886CB2801C02500FF8D10 /* AdDomain+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdDomain+Extension.swift"; sourceTree = "<group>"; };
+		3DD966682801C6FD002A3834 /* AdListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdListTableViewCell.swift; sourceTree = "<group>"; };
+		3DD9666A2801C75D002A3834 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		3DD9666D2801C7A2002A3834 /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
+		3DD9666F2801C7D1002A3834 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,9 +315,11 @@
 		3D93400E2800E9A50002B11D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				3DD9666C2801C791002A3834 /* Helpers */,
 				3D9886BD2801B57000FF8D10 /* Extensions */,
 				3D9886C72801BFAD00FF8D10 /* Mappers */,
 				3D9886C82801BFCA00FF8D10 /* Models */,
+				3DD966672801C6D7002A3834 /* Views */,
 				3D9886A8280197D800FF8D10 /* ViewControllers */,
 				3D9886A5280197A000FF8D10 /* ViewModels */,
 				3D9886AB2801992F00FF8D10 /* Coordinators */,
@@ -424,6 +434,8 @@
 			isa = PBXGroup;
 			children = (
 				3D9886BE2801B58000FF8D10 /* UIColor+Extension.swift */,
+				3DD9666A2801C75D002A3834 /* UITableView+Extension.swift */,
+				3DD9666F2801C7D1002A3834 /* UITableViewCell+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -442,6 +454,22 @@
 				3D9886C92801C00200FF8D10 /* AdModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3DD966672801C6D7002A3834 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3DD966682801C6FD002A3834 /* AdListTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3DD9666C2801C791002A3834 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3DD9666D2801C7A2002A3834 /* ReusableViewProtocol.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -606,10 +634,12 @@
 				3D9340132800EA710002B11D /* HTTPMethod.swift in Sources */,
 				3D4DA14528010E560039EE02 /* AdProtocols.swift in Sources */,
 				3D9340242800F4750002B11D /* AdRequest.swift in Sources */,
+				3DD966702801C7D1002A3834 /* UITableViewCell+Extension.swift in Sources */,
 				3D93402D2800F61E0002B11D /* AdDataImageURL.swift in Sources */,
 				3D9886B72801B0FA00FF8D10 /* Localizable.swift in Sources */,
 				3D9340222800F3FD0002B11D /* AdService.swift in Sources */,
 				3D9886B1280199D800FF8D10 /* AdListCoordinator.swift in Sources */,
+				3DD9666B2801C75D002A3834 /* UITableView+Extension.swift in Sources */,
 				3D9886CA2801C00200FF8D10 /* AdModel.swift in Sources */,
 				3D4DA14E280111000039EE02 /* DateFormatter+Extension.swift in Sources */,
 				3D9886AF2801997500FF8D10 /* CoordinatorProtocol.swift in Sources */,
@@ -620,6 +650,7 @@
 				3D933FDB2800E36B0002B11D /* AppDelegate.swift in Sources */,
 				3D9886A7280197B900FF8D10 /* AdListViewModel.swift in Sources */,
 				3D4DA14B28010ECB0039EE02 /* AdData+Extension.swift in Sources */,
+				3DD9666E2801C7A2002A3834 /* ReusableViewProtocol.swift in Sources */,
 				3D4DA131280108910039EE02 /* CategoryService.swift in Sources */,
 				3D9886CC2801C02500FF8D10 /* AdDomain+Extension.swift in Sources */,
 				3D4DA13F28010D650039EE02 /* AdServiceProtocol.swift in Sources */,
@@ -627,6 +658,7 @@
 				3D9886BF2801B58000FF8D10 /* UIColor+Extension.swift in Sources */,
 				3D9886AD2801995200FF8D10 /* AppCoordinator.swift in Sources */,
 				3D4DA14128010D8A0039EE02 /* CategoryServiceProtocol.swift in Sources */,
+				3DD966692801C6FD002A3834 /* AdListTableViewCell.swift in Sources */,
 				3D4DA14828010E820039EE02 /* AdDomain.swift in Sources */,
 				3D4DA12F280108680039EE02 /* CategoryRequest.swift in Sources */,
 				3D93401E2800EC320002B11D /* URLSession+Extension.swift in Sources */,

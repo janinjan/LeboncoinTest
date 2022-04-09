@@ -10,9 +10,13 @@ import Foundation
 final class AdListViewModel {
 
     // MARK: - Properties
-
+    
     let title = Strings.adListTitle
     var ads: [AdModel] = []
+
+    var numberOfTableViewItems: Int {
+        return ads.count
+    }
 
     // MARK: - Usecases
 
@@ -28,5 +32,9 @@ final class AdListViewModel {
 
     func getAds() async {
         ads = await adUsecase.retrieveAds().map({$0.toUI})
+    }
+
+    func getAdInfo(for adIndex: Int) -> AdModel {
+        return ads[adIndex]
     }
 }
