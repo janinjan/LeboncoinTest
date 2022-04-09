@@ -12,7 +12,6 @@
 		3D933FDF2800E36B0002B11D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDE2800E36B0002B11D /* ViewController.swift */; };
 		3D933FE42800E36E0002B11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D933FE32800E36E0002B11D /* Assets.xcassets */; };
 		3D933FE72800E36E0002B11D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D933FE52800E36E0002B11D /* LaunchScreen.storyboard */; };
-		3D933FF22800E36F0002B11D /* LeboncoinTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FF12800E36F0002B11D /* LeboncoinTestTests.swift */; };
 		3D933FFC2800E36F0002B11D /* LeboncoinTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FFB2800E36F0002B11D /* LeboncoinTestUITests.swift */; };
 		3D933FFE2800E36F0002B11D /* LeboncoinTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FFD2800E36F0002B11D /* LeboncoinTestUITestsLaunchTests.swift */; };
 		3D9340132800EA710002B11D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9340122800EA710002B11D /* HTTPMethod.swift */; };
@@ -21,6 +20,14 @@
 		3D9340192800EAF10002B11D /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9340182800EAF10002B11D /* NetworkClientProtocol.swift */; };
 		3D93401B2800EB270002B11D /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93401A2800EB270002B11D /* NetworkClient.swift */; };
 		3D93401E2800EC320002B11D /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93401D2800EC320002B11D /* URLSession+Extension.swift */; };
+		3D9340222800F3FD0002B11D /* AdService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9340212800F3FD0002B11D /* AdService.swift */; };
+		3D9340242800F4750002B11D /* AdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9340232800F4750002B11D /* AdRequest.swift */; };
+		3D93402B2800F5E00002B11D /* AdData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93402A2800F5E00002B11D /* AdData.swift */; };
+		3D93402D2800F61E0002B11D /* AdDataImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93402C2800F61E0002B11D /* AdDataImageURL.swift */; };
+		3D93402F2800F7930002B11D /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D93402E2800F7930002B11D /* URLSessionFake.swift */; };
+		3D9340312800F7D00002B11D /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9340302800F7D00002B11D /* FakeResponseData.swift */; };
+		3D9340332800F8070002B11D /* Listing.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D9340322800F8070002B11D /* Listing.json */; };
+		3D9340362800F92E0002B11D /* AdServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9340352800F92E0002B11D /* AdServiceTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +56,6 @@
 		3D933FE62800E36E0002B11D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D933FE82800E36E0002B11D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D933FED2800E36F0002B11D /* LeboncoinTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeboncoinTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D933FF12800E36F0002B11D /* LeboncoinTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeboncoinTestTests.swift; sourceTree = "<group>"; };
 		3D933FF72800E36F0002B11D /* LeboncoinTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeboncoinTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D933FFB2800E36F0002B11D /* LeboncoinTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeboncoinTestUITests.swift; sourceTree = "<group>"; };
 		3D933FFD2800E36F0002B11D /* LeboncoinTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeboncoinTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -59,6 +65,14 @@
 		3D9340182800EAF10002B11D /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
 		3D93401A2800EB270002B11D /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		3D93401D2800EC320002B11D /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
+		3D9340212800F3FD0002B11D /* AdService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdService.swift; sourceTree = "<group>"; };
+		3D9340232800F4750002B11D /* AdRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdRequest.swift; sourceTree = "<group>"; };
+		3D93402A2800F5E00002B11D /* AdData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdData.swift; sourceTree = "<group>"; };
+		3D93402C2800F61E0002B11D /* AdDataImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDataImageURL.swift; sourceTree = "<group>"; };
+		3D93402E2800F7930002B11D /* URLSessionFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
+		3D9340302800F7D00002B11D /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
+		3D9340322800F8070002B11D /* Listing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Listing.json; sourceTree = "<group>"; };
+		3D9340352800F92E0002B11D /* AdServiceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdServiceTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +132,9 @@
 		3D933FF02800E36F0002B11D /* LeboncoinTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				3D933FF12800E36F0002B11D /* LeboncoinTestTests.swift */,
+				3D9340342800F9050002B11D /* AdServiceTests */,
+				3D93402E2800F7930002B11D /* URLSessionFake.swift */,
+				3D9340302800F7D00002B11D /* FakeResponseData.swift */,
 			);
 			path = LeboncoinTestTests;
 			sourceTree = "<group>";
@@ -156,8 +172,7 @@
 		3D93400D2800E9920002B11D /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				3D93401C2800EBD70002B11D /* Extensions */,
-				3D9340112800EA540002B11D /* Network */,
+				3D93401F2800F34F0002B11D /* Services */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -188,6 +203,44 @@
 				3D93401D2800EC320002B11D /* URLSession+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3D93401F2800F34F0002B11D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3D93401C2800EBD70002B11D /* Extensions */,
+				3D9340112800EA540002B11D /* Network */,
+				3D9340272800F5B80002B11D /* Models */,
+				3D9340202800F3D50002B11D /* Ad */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3D9340202800F3D50002B11D /* Ad */ = {
+			isa = PBXGroup;
+			children = (
+				3D9340212800F3FD0002B11D /* AdService.swift */,
+				3D9340232800F4750002B11D /* AdRequest.swift */,
+			);
+			path = Ad;
+			sourceTree = "<group>";
+		};
+		3D9340272800F5B80002B11D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D93402A2800F5E00002B11D /* AdData.swift */,
+				3D93402C2800F61E0002B11D /* AdDataImageURL.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D9340342800F9050002B11D /* AdServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D9340322800F8070002B11D /* Listing.json */,
+				3D9340352800F92E0002B11D /* AdServiceTestCase.swift */,
+			);
+			path = AdServiceTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9340332800F8070002B11D /* Listing.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,8 +397,12 @@
 			files = (
 				3D9340152800EA820002B11D /* ServiceError.swift in Sources */,
 				3D9340132800EA710002B11D /* HTTPMethod.swift in Sources */,
+				3D9340242800F4750002B11D /* AdRequest.swift in Sources */,
+				3D93402D2800F61E0002B11D /* AdDataImageURL.swift in Sources */,
+				3D9340222800F3FD0002B11D /* AdService.swift in Sources */,
 				3D9340192800EAF10002B11D /* NetworkClientProtocol.swift in Sources */,
 				3D933FDF2800E36B0002B11D /* ViewController.swift in Sources */,
+				3D93402B2800F5E00002B11D /* AdData.swift in Sources */,
 				3D933FDB2800E36B0002B11D /* AppDelegate.swift in Sources */,
 				3D93401E2800EC320002B11D /* URLSession+Extension.swift in Sources */,
 				3D933FDD2800E36B0002B11D /* SceneDelegate.swift in Sources */,
@@ -357,7 +415,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D933FF22800E36F0002B11D /* LeboncoinTestTests.swift in Sources */,
+				3D9340362800F92E0002B11D /* AdServiceTestCase.swift in Sources */,
+				3D93402F2800F7930002B11D /* URLSessionFake.swift in Sources */,
+				3D9340312800F7D00002B11D /* FakeResponseData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
