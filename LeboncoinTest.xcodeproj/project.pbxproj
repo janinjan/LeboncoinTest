@@ -23,6 +23,7 @@
 		3D6094072801F21D007CC14A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6094062801F21D007CC14A /* UIImageView+Extension.swift */; };
 		3D60940928021155007CC14A /* AdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60940828021155007CC14A /* AdDetailViewController.swift */; };
 		3D60940B28021186007CC14A /* AdDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60940A28021186007CC14A /* AdDetailViewModel.swift */; };
+		3D60940D280223C8007CC14A /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60940C280223C8007CC14A /* PaddingLabel.swift */; };
 		3D933FDB2800E36B0002B11D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDA2800E36B0002B11D /* AppDelegate.swift */; };
 		3D933FDD2800E36B0002B11D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDC2800E36B0002B11D /* SceneDelegate.swift */; };
 		3D933FE42800E36E0002B11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D933FE32800E36E0002B11D /* Assets.xcassets */; };
@@ -96,6 +97,7 @@
 		3D6094062801F21D007CC14A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		3D60940828021155007CC14A /* AdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailViewController.swift; sourceTree = "<group>"; };
 		3D60940A28021186007CC14A /* AdDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailViewModel.swift; sourceTree = "<group>"; };
+		3D60940C280223C8007CC14A /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		3D933FD72800E36B0002B11D /* LeboncoinTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeboncoinTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D933FDA2800E36B0002B11D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D933FDC2800E36B0002B11D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -480,6 +482,7 @@
 			children = (
 				3DD9666D2801C7A2002A3834 /* ReusableViewProtocol.swift */,
 				3DD966712801D08E002A3834 /* TableViewDataSource.swift */,
+				3D60940C280223C8007CC14A /* PaddingLabel.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -649,6 +652,7 @@
 				3D4DA14528010E560039EE02 /* AdProtocols.swift in Sources */,
 				3D9340242800F4750002B11D /* AdRequest.swift in Sources */,
 				3DD966702801C7D1002A3834 /* UITableViewCell+Extension.swift in Sources */,
+				3D60940D280223C8007CC14A /* PaddingLabel.swift in Sources */,
 				3D93402D2800F61E0002B11D /* AdDataImageURL.swift in Sources */,
 				3D9886B72801B0FA00FF8D10 /* Localizable.swift in Sources */,
 				3D9340222800F3FD0002B11D /* AdService.swift in Sources */,

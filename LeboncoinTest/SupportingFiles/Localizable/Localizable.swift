@@ -31,4 +31,5 @@ struct Localizable {
 
 enum Strings {
     @Localizable static private(set) var adListTitle = "AdListTitle"
+    @Localizable static private(set) var urgentAd = "UrgentAd"
 }

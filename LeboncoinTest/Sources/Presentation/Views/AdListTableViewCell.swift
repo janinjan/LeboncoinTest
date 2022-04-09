@@ -64,6 +64,20 @@ class AdListTableViewCell: UITableViewCell {
         return stackView
     }()
 
+    lazy var urgentLabel: UILabel = {
+        let label = PaddingLabel(top: 4, left: 8, bottom: 4, right: 8)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 12, weight: .semibold)
+        label.textColor = .white
+        label.textAlignment = .center
+        label.backgroundColor = .lbcPaleOrange
+        label.numberOfLines = 1
+        label.layer.cornerRadius = 5
+        label.layer.masksToBounds = true
+
+        return label
+    }()
+
     // MARK: - Initializer
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -83,6 +97,7 @@ class AdListTableViewCell: UITableViewCell {
         titleLabel.text = model.title
         categoryLabel.text = model.categoryName
         priceLabel.text = model.price
+        urgentLabel.text = model.isUrgent ? Strings.urgentAd : ""
 
         if let image = model.imageThumbURL {
             adImageView.urlImage(image)
@@ -91,6 +106,7 @@ class AdListTableViewCell: UITableViewCell {
 
     private func setupViews() {
         contentView.addSubview(stackView)
+        contentView.addSubview(urgentLabel)
     }
 
     private func setupLayoutConstraints() {
@@ -99,7 +115,9 @@ class AdListTableViewCell: UITableViewCell {
             stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
             stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
             stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12),
-            adImageView.heightAnchor.constraint(equalToConstant: UIDevice.current.userInterfaceIdiom == .pad ? 300 : 155)
+            adImageView.heightAnchor.constraint(equalToConstant: UIDevice.current.userInterfaceIdiom == .pad ? 300 : 155),
+            urgentLabel.trailingAnchor.constraint(equalTo: adImageView.trailingAnchor, constant: -6),
+            urgentLabel.topAnchor.constraint(equalTo: adImageView.topAnchor, constant: 6)
         ])
     }
 }
