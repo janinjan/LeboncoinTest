@@ -22,9 +22,11 @@ final class AdService {
     init(networkClient: NetworkClient) {
         self.networkClient = networkClient
     }
-    
-    // MARK: - Methods
-    
+}
+
+// MARK: - extension AdsServiceProtocol
+
+extension AdService: AdsServiceProtocol {
     func fetchAds() async throws -> Ads {
         try await networkClient.getServiceResponse(request: adRequest,
                                                    scheme: AdService.scheme,

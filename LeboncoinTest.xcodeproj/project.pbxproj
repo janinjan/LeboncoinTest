@@ -12,6 +12,14 @@
 		3D4DA133280108D20039EE02 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA132280108D20039EE02 /* CategoryData.swift */; };
 		3D4DA138280109560039EE02 /* Categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D4DA137280109560039EE02 /* Categories.json */; };
 		3D4DA13A280109760039EE02 /* CategoryServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA139280109760039EE02 /* CategoryServiceTestCase.swift */; };
+		3D4DA13D28010C290039EE02 /* AdRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA13C28010C290039EE02 /* AdRepository.swift */; };
+		3D4DA13F28010D650039EE02 /* AdServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA13E28010D650039EE02 /* AdServiceProtocol.swift */; };
+		3D4DA14128010D8A0039EE02 /* CategoryServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA14028010D8A0039EE02 /* CategoryServiceProtocol.swift */; };
+		3D4DA14528010E560039EE02 /* AdProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA14428010E560039EE02 /* AdProtocols.swift */; };
+		3D4DA14828010E820039EE02 /* AdDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA14728010E820039EE02 /* AdDomain.swift */; };
+		3D4DA14B28010ECB0039EE02 /* AdData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA14A28010ECB0039EE02 /* AdData+Extension.swift */; };
+		3D4DA14E280111000039EE02 /* DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA14D280111000039EE02 /* DateFormatter+Extension.swift */; };
+		3D4DA150280111F00039EE02 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA14F280111F00039EE02 /* String+Extension.swift */; };
 		3D933FDB2800E36B0002B11D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDA2800E36B0002B11D /* AppDelegate.swift */; };
 		3D933FDD2800E36B0002B11D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDC2800E36B0002B11D /* SceneDelegate.swift */; };
 		3D933FDF2800E36B0002B11D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDE2800E36B0002B11D /* ViewController.swift */; };
@@ -58,6 +66,14 @@
 		3D4DA132280108D20039EE02 /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
 		3D4DA137280109560039EE02 /* Categories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Categories.json; sourceTree = "<group>"; };
 		3D4DA139280109760039EE02 /* CategoryServiceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryServiceTestCase.swift; sourceTree = "<group>"; };
+		3D4DA13C28010C290039EE02 /* AdRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdRepository.swift; sourceTree = "<group>"; };
+		3D4DA13E28010D650039EE02 /* AdServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdServiceProtocol.swift; sourceTree = "<group>"; };
+		3D4DA14028010D8A0039EE02 /* CategoryServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryServiceProtocol.swift; sourceTree = "<group>"; };
+		3D4DA14428010E560039EE02 /* AdProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdProtocols.swift; sourceTree = "<group>"; };
+		3D4DA14728010E820039EE02 /* AdDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDomain.swift; sourceTree = "<group>"; };
+		3D4DA14A28010ECB0039EE02 /* AdData+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdData+Extension.swift"; sourceTree = "<group>"; };
+		3D4DA14D280111000039EE02 /* DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		3D4DA14F280111F00039EE02 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		3D933FD72800E36B0002B11D /* LeboncoinTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeboncoinTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D933FDA2800E36B0002B11D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D933FDC2800E36B0002B11D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,8 +129,9 @@
 		3D4DA12D280108500039EE02 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				3D4DA12E280108680039EE02 /* CategoryRequest.swift */,
 				3D4DA130280108910039EE02 /* CategoryService.swift */,
+				3D4DA14028010D8A0039EE02 /* CategoryServiceProtocol.swift */,
+				3D4DA12E280108680039EE02 /* CategoryRequest.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -126,6 +143,56 @@
 				3D4DA139280109760039EE02 /* CategoryServiceTestCase.swift */,
 			);
 			path = CategoryServiceTests;
+			sourceTree = "<group>";
+		};
+		3D4DA13B28010C110039EE02 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3D4DA13C28010C290039EE02 /* AdRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		3D4DA14228010E2E0039EE02 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				3D4DA14328010E390039EE02 /* Protocols */,
+				3D4DA14628010E6F0039EE02 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3D4DA14328010E390039EE02 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3D4DA14428010E560039EE02 /* AdProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3D4DA14628010E6F0039EE02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D4DA14728010E820039EE02 /* AdDomain.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D4DA14928010EB80039EE02 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				3D4DA14A28010ECB0039EE02 /* AdData+Extension.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		3D4DA14C280110EA0039EE02 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3D4DA14D280111000039EE02 /* DateFormatter+Extension.swift */,
+				3D4DA14F280111F00039EE02 /* String+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		3D933FCE2800E36B0002B11D = {
@@ -181,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				3D93400E2800E9A50002B11D /* Presentation */,
+				3D4DA14228010E2E0039EE02 /* Domain */,
 				3D93400D2800E9920002B11D /* Data */,
 			);
 			path = Sources;
@@ -201,6 +269,10 @@
 		3D93400D2800E9920002B11D /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				3D4DA14C280110EA0039EE02 /* Extensions */,
+				3D4DA14928010EB80039EE02 /* Mappers */,
+				3D4DA13B28010C110039EE02 /* Repositories */,
+				3D9340272800F5B80002B11D /* Models */,
 				3D93401F2800F34F0002B11D /* Services */,
 			);
 			path = Data;
@@ -239,7 +311,6 @@
 			children = (
 				3D93401C2800EBD70002B11D /* Extensions */,
 				3D9340112800EA540002B11D /* Network */,
-				3D9340272800F5B80002B11D /* Models */,
 				3D9340202800F3D50002B11D /* Ad */,
 				3D4DA12D280108500039EE02 /* Category */,
 			);
@@ -250,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				3D9340212800F3FD0002B11D /* AdService.swift */,
+				3D4DA13E28010D650039EE02 /* AdServiceProtocol.swift */,
 				3D9340232800F4750002B11D /* AdRequest.swift */,
 			);
 			path = Ad;
@@ -429,15 +501,23 @@
 			files = (
 				3D9340152800EA820002B11D /* ServiceError.swift in Sources */,
 				3D9340132800EA710002B11D /* HTTPMethod.swift in Sources */,
+				3D4DA14528010E560039EE02 /* AdProtocols.swift in Sources */,
 				3D9340242800F4750002B11D /* AdRequest.swift in Sources */,
 				3D93402D2800F61E0002B11D /* AdDataImageURL.swift in Sources */,
 				3D9340222800F3FD0002B11D /* AdService.swift in Sources */,
+				3D4DA14E280111000039EE02 /* DateFormatter+Extension.swift in Sources */,
 				3D4DA133280108D20039EE02 /* CategoryData.swift in Sources */,
 				3D9340192800EAF10002B11D /* NetworkClientProtocol.swift in Sources */,
 				3D933FDF2800E36B0002B11D /* ViewController.swift in Sources */,
+				3D4DA13D28010C290039EE02 /* AdRepository.swift in Sources */,
 				3D93402B2800F5E00002B11D /* AdData.swift in Sources */,
 				3D933FDB2800E36B0002B11D /* AppDelegate.swift in Sources */,
+				3D4DA14B28010ECB0039EE02 /* AdData+Extension.swift in Sources */,
 				3D4DA131280108910039EE02 /* CategoryService.swift in Sources */,
+				3D4DA13F28010D650039EE02 /* AdServiceProtocol.swift in Sources */,
+				3D4DA150280111F00039EE02 /* String+Extension.swift in Sources */,
+				3D4DA14128010D8A0039EE02 /* CategoryServiceProtocol.swift in Sources */,
+				3D4DA14828010E820039EE02 /* AdDomain.swift in Sources */,
 				3D4DA12F280108680039EE02 /* CategoryRequest.swift in Sources */,
 				3D93401E2800EC320002B11D /* URLSession+Extension.swift in Sources */,
 				3D933FDD2800E36B0002B11D /* SceneDelegate.swift in Sources */,

@@ -22,8 +22,11 @@ final class CategoryService {
     init(networkClient: NetworkClient) {
         self.networkClient = networkClient
     }
+}
 
-    // MARK: - Methods
+// MARK: - extension CategoryServiceProtocol
+
+extension CategoryService: CategoryServiceProtocol {
 
     func fetchCategories() async throws -> Categories {
         try await networkClient.getServiceResponse(request: categoryRequest,
