@@ -15,4 +15,13 @@ extension DateFormatter {
 
         return dateFormatter
     }()
+
+    static let shortDateFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = .current
+        dateFormatter.dateStyle = .short
+        dateFormatter.timeStyle = .short
+        
+        return dateFormatter
+    }()
 }

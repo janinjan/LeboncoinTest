@@ -12,7 +12,7 @@ final class AdListViewModel {
     // MARK: - Properties
 
     let title = Strings.adListTitle
-    var ads: [AdDomain] = []
+    var ads: [AdModel] = []
 
     // MARK: - Usecases
 
@@ -23,10 +23,10 @@ final class AdListViewModel {
     init(adUsecase: AdUsecaseProtocol) {
         self.adUsecase = adUsecase
     }
-
+    
     // MARK: - Methods
 
     func getAds() async {
-        ads = await adUsecase.retrieveAds()
+        ads = await adUsecase.retrieveAds().map({$0.toUI})
     }
 }
