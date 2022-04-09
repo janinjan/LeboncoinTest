@@ -10,16 +10,58 @@ import UIKit
 class AdListTableViewCell: UITableViewCell {
 
     // MARK: - UI Element
+    
+    lazy var adImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFill
+        imageView.layer.cornerRadius = 8
+        imageView.clipsToBounds = true
 
-    lazy var title: UILabel = {
+        return imageView
+    }()
+
+    lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 18, weight: .semibold)
-        label.textColor = .lbcBlack
+        label.textColor = .lbcGrey800
         label.textAlignment = .left
         label.numberOfLines = 0
 
         return label
+    }()
+
+    lazy var categoryLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 14, weight: .medium)
+        label.textColor = .lbcGrey600
+        label.textAlignment = .left
+        label.numberOfLines = 0
+
+        return label
+    }()
+
+    lazy var priceLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 14, weight: .semibold)
+        label.textColor = .lbcOrange
+        label.textAlignment = .left
+        label.numberOfLines = 1
+
+        return label
+    }()
+
+    lazy var stackView: UIStackView = {
+        let stackView = UIStackView(arrangedSubviews: [adImageView, titleLabel, categoryLabel, priceLabel])
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.distribution = .equalSpacing
+        stackView.spacing = 2
+
+        return stackView
     }()
 
     // MARK: - Initializer
@@ -27,6 +69,7 @@ class AdListTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: Self.reusableID)
         setupViews()
+        setupLayoutConstraints()
     }
 
     @available(*, unavailable)
@@ -35,19 +78,28 @@ class AdListTableViewCell: UITableViewCell {
     }
 
     // MARK: - Methods
-    
+
     func configureCell(using model: AdModel) {
-        title.text = model.title
+        titleLabel.text = model.title
+        categoryLabel.text = model.categoryName
+        priceLabel.text = model.price
+
+        if let image = model.imageThumbURL {
+            adImageView.urlImage(image)
+        }
     }
 
     private func setupViews() {
-        contentView.addSubview(title)
+        contentView.addSubview(stackView)
+    }
 
+    private func setupLayoutConstraints() {
         NSLayoutConstraint.activate([
-            title.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
-            title.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-            title.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-            title.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20)
+            stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
+            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
+            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
+            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12),
+            adImageView.heightAnchor.constraint(equalToConstant: UIDevice.current.userInterfaceIdiom == .pad ? 300 : 155)
         ])
     }
 }

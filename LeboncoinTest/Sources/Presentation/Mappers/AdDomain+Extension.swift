@@ -13,7 +13,7 @@ extension AdDomain {
         AdModel(categoryName: categoryName,
                 title: title,
                 description: description,
-                price: "\(price)€",
+                price: "\(price) €",
                 imageSmallURL: imageSmallURL,
                 imageThumbURL: imageThumbURL,
                 creationDate: DateFormatter.shortDateFormatter.string(from: creationDate),
