@@ -11,7 +11,7 @@ final class AdListViewModel {
 
     // MARK: - Properties
 
-    let title = "Annonces"
+    let title = Strings.adListTitle
     var ads: [AdDomain] = []
 
     // MARK: - Usecases
