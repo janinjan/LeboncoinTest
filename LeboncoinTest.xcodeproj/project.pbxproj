@@ -22,7 +22,6 @@
 		3D4DA150280111F00039EE02 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA14F280111F00039EE02 /* String+Extension.swift */; };
 		3D933FDB2800E36B0002B11D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDA2800E36B0002B11D /* AppDelegate.swift */; };
 		3D933FDD2800E36B0002B11D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDC2800E36B0002B11D /* SceneDelegate.swift */; };
-		3D933FDF2800E36B0002B11D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDE2800E36B0002B11D /* ViewController.swift */; };
 		3D933FE42800E36E0002B11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D933FE32800E36E0002B11D /* Assets.xcassets */; };
 		3D933FE72800E36E0002B11D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D933FE52800E36E0002B11D /* LaunchScreen.storyboard */; };
 		3D933FFC2800E36F0002B11D /* LeboncoinTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FFB2800E36F0002B11D /* LeboncoinTestUITests.swift */; };
@@ -43,6 +42,11 @@
 		3D9340362800F92E0002B11D /* AdServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9340352800F92E0002B11D /* AdServiceTestCase.swift */; };
 		3D9886A0280184A500FF8D10 /* AdUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98869F280184A500FF8D10 /* AdUsecase.swift */; };
 		3D9886A428018AC800FF8D10 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9886A328018AC800FF8D10 /* Logger.swift */; };
+		3D9886A7280197B900FF8D10 /* AdListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9886A6280197B900FF8D10 /* AdListViewModel.swift */; };
+		3D9886AA2801980600FF8D10 /* AdListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9886A92801980600FF8D10 /* AdListViewController.swift */; };
+		3D9886AD2801995200FF8D10 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9886AC2801995200FF8D10 /* AppCoordinator.swift */; };
+		3D9886AF2801997500FF8D10 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9886AE2801997500FF8D10 /* CoordinatorProtocol.swift */; };
+		3D9886B1280199D800FF8D10 /* AdListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9886B0280199D800FF8D10 /* AdListCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +83,6 @@
 		3D933FD72800E36B0002B11D /* LeboncoinTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeboncoinTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D933FDA2800E36B0002B11D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D933FDC2800E36B0002B11D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D933FDE2800E36B0002B11D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D933FE32800E36E0002B11D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D933FE62800E36E0002B11D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D933FE82800E36E0002B11D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,6 +106,11 @@
 		3D9340352800F92E0002B11D /* AdServiceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdServiceTestCase.swift; sourceTree = "<group>"; };
 		3D98869F280184A500FF8D10 /* AdUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdUsecase.swift; sourceTree = "<group>"; };
 		3D9886A328018AC800FF8D10 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		3D9886A6280197B900FF8D10 /* AdListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdListViewModel.swift; sourceTree = "<group>"; };
+		3D9886A92801980600FF8D10 /* AdListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdListViewController.swift; sourceTree = "<group>"; };
+		3D9886AC2801995200FF8D10 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3D9886AE2801997500FF8D10 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		3D9886B0280199D800FF8D10 /* AdListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdListCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,7 +295,9 @@
 		3D93400E2800E9A50002B11D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				3D933FDE2800E36B0002B11D /* ViewController.swift */,
+				3D9886A8280197D800FF8D10 /* ViewControllers */,
+				3D9886A5280197A000FF8D10 /* ViewModels */,
+				3D9886AB2801992F00FF8D10 /* Coordinators */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -358,6 +368,32 @@
 				3D98869F280184A500FF8D10 /* AdUsecase.swift */,
 			);
 			path = Usecases;
+			sourceTree = "<group>";
+		};
+		3D9886A5280197A000FF8D10 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3D9886A6280197B900FF8D10 /* AdListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3D9886A8280197D800FF8D10 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D9886A92801980600FF8D10 /* AdListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3D9886AB2801992F00FF8D10 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				3D9886AC2801995200FF8D10 /* AppCoordinator.swift */,
+				3D9886AE2801997500FF8D10 /* CoordinatorProtocol.swift */,
+				3D9886B0280199D800FF8D10 /* AdListCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,6 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9886A0280184A500FF8D10 /* AdUsecase.swift in Sources */,
+				3D9886AA2801980600FF8D10 /* AdListViewController.swift in Sources */,
 				3D9340152800EA820002B11D /* ServiceError.swift in Sources */,
 				3D9886A428018AC800FF8D10 /* Logger.swift in Sources */,
 				3D9340132800EA710002B11D /* HTTPMethod.swift in Sources */,
@@ -521,17 +558,20 @@
 				3D9340242800F4750002B11D /* AdRequest.swift in Sources */,
 				3D93402D2800F61E0002B11D /* AdDataImageURL.swift in Sources */,
 				3D9340222800F3FD0002B11D /* AdService.swift in Sources */,
+				3D9886B1280199D800FF8D10 /* AdListCoordinator.swift in Sources */,
 				3D4DA14E280111000039EE02 /* DateFormatter+Extension.swift in Sources */,
+				3D9886AF2801997500FF8D10 /* CoordinatorProtocol.swift in Sources */,
 				3D4DA133280108D20039EE02 /* CategoryData.swift in Sources */,
 				3D9340192800EAF10002B11D /* NetworkClientProtocol.swift in Sources */,
-				3D933FDF2800E36B0002B11D /* ViewController.swift in Sources */,
 				3D4DA13D28010C290039EE02 /* AdRepository.swift in Sources */,
 				3D93402B2800F5E00002B11D /* AdData.swift in Sources */,
 				3D933FDB2800E36B0002B11D /* AppDelegate.swift in Sources */,
+				3D9886A7280197B900FF8D10 /* AdListViewModel.swift in Sources */,
 				3D4DA14B28010ECB0039EE02 /* AdData+Extension.swift in Sources */,
 				3D4DA131280108910039EE02 /* CategoryService.swift in Sources */,
 				3D4DA13F28010D650039EE02 /* AdServiceProtocol.swift in Sources */,
 				3D4DA150280111F00039EE02 /* String+Extension.swift in Sources */,
+				3D9886AD2801995200FF8D10 /* AppCoordinator.swift in Sources */,
 				3D4DA14128010D8A0039EE02 /* CategoryServiceProtocol.swift in Sources */,
 				3D4DA14828010E820039EE02 /* AdDomain.swift in Sources */,
 				3D4DA12F280108680039EE02 /* CategoryRequest.swift in Sources */,
