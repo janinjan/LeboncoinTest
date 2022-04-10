@@ -13,6 +13,7 @@ final class AdListViewModel {
     
     let title = Strings.adListTitle
     let filterButtonText = Strings.filter
+    let resetButtonText = Strings.reset
     var ads: [AdModel] = []
     var filteredAds: [AdModel] = []
 

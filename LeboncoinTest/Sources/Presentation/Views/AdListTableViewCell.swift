@@ -98,6 +98,7 @@ class AdListTableViewCell: UITableViewCell {
         categoryLabel.text = model.categoryName
         priceLabel.text = model.price
         urgentLabel.text = model.isUrgent ? Strings.urgentAd : ""
+        urgentLabel.isHidden = model.isUrgent ? false : true
 
         if let image = model.imageThumbURL {
             adImageView.urlImage(image)

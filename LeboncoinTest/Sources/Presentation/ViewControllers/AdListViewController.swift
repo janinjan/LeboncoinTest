@@ -30,6 +30,7 @@ class AdListViewController: UIViewController {
     }()
 
     private var filterBarButtonItem = UIBarButtonItem()
+    private var resetBarButtonItem = UIBarButtonItem()
 
     // MARK: - Initializer
 
@@ -68,11 +69,23 @@ class AdListViewController: UIViewController {
             target: self,
             action: #selector(didTapFilterButtonItem))
 
+        resetBarButtonItem = UIBarButtonItem(
+            title: viewModel.resetButtonText,
+            style: .plain,
+            target: self,
+            action: #selector(didTapResetButtonItem))
+
+        navigationItem.leftBarButtonItem = resetBarButtonItem
+        navigationItem.leftBarButtonItem?.isEnabled = false
         navigationItem.rightBarButtonItem = filterBarButtonItem
     }
 
     @objc func didTapFilterButtonItem() {
         coordinator?.didTapFilterButtonItem()
+    }
+
+    @objc func didTapResetButtonItem() {
+        // TODO: reset filter
     }
 
     private func setupTableView() {
@@ -116,7 +129,7 @@ extension AdListViewController: UITableViewDataSource {
                                                        for: indexPath) as? AdListTableViewCell else {
             return UITableViewCell()
         }
-        
+
         let ads = viewModel.getCellInfo(at: indexPath.row)
         cell.configureCell(using: ads)
         cell.selectionStyle = .none

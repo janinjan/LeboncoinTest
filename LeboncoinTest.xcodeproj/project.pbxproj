@@ -67,6 +67,7 @@
 		3D9886BF2801B58000FF8D10 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9886BE2801B58000FF8D10 /* UIColor+Extension.swift */; };
 		3D9886CA2801C00200FF8D10 /* AdModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9886C92801C00200FF8D10 /* AdModel.swift */; };
 		3D9886CC2801C02500FF8D10 /* AdDomain+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9886CB2801C02500FF8D10 /* AdDomain+Extension.swift */; };
+		3DBA333128037010009CF55B /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBA333028037010009CF55B /* Float+Extension.swift */; };
 		3DD966692801C6FD002A3834 /* AdListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD966682801C6FD002A3834 /* AdListTableViewCell.swift */; };
 		3DD9666B2801C75D002A3834 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9666A2801C75D002A3834 /* UITableView+Extension.swift */; };
 		3DD9666E2801C7A2002A3834 /* ReusableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD9666D2801C7A2002A3834 /* ReusableViewProtocol.swift */; };
@@ -157,6 +158,7 @@
 		3D9886BE2801B58000FF8D10 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		3D9886C92801C00200FF8D10 /* AdModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdModel.swift; sourceTree = "<group>"; };
 		3D9886CB2801C02500FF8D10 /* AdDomain+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AdDomain+Extension.swift"; sourceTree = "<group>"; };
+		3DBA333028037010009CF55B /* Float+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
 		3DD966682801C6FD002A3834 /* AdListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdListTableViewCell.swift; sourceTree = "<group>"; };
 		3DD9666A2801C75D002A3834 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		3DD9666D2801C7A2002A3834 /* ReusableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewProtocol.swift; sourceTree = "<group>"; };
@@ -479,6 +481,7 @@
 				3DD9666A2801C75D002A3834 /* UITableView+Extension.swift */,
 				3DD9666F2801C7D1002A3834 /* UITableViewCell+Extension.swift */,
 				3D6094062801F21D007CC14A /* UIImageView+Extension.swift */,
+				3DBA333028037010009CF55B /* Float+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -707,6 +710,7 @@
 				3D933FDB2800E36B0002B11D /* AppDelegate.swift in Sources */,
 				3D9886A7280197B900FF8D10 /* AdListViewModel.swift in Sources */,
 				3D4DA14B28010ECB0039EE02 /* AdData+Extension.swift in Sources */,
+				3DBA333128037010009CF55B /* Float+Extension.swift in Sources */,
 				3DD9666E2801C7A2002A3834 /* ReusableViewProtocol.swift in Sources */,
 				3D4DA131280108910039EE02 /* CategoryService.swift in Sources */,
 				3D9886CC2801C02500FF8D10 /* AdDomain+Extension.swift in Sources */,
