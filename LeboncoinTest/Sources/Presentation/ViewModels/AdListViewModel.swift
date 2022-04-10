@@ -14,6 +14,11 @@ final class AdListViewModel {
     let title = Strings.adListTitle
     let filterButtonText = Strings.filter
     var ads: [AdModel] = []
+    var filteredAds: [AdModel] = []
+
+    var numberOfTableViewItems: Int {
+        return filteredAds.count
+    }
     
     // MARK: - Usecases
     
@@ -29,9 +34,15 @@ final class AdListViewModel {
     
     func getAds() async {
         ads = await adUsecase.retrieveAds().map({$0.toUI})
+        filteredAds = ads
     }
     
-    func didTapAdCell(at index: Int) -> AdModel {
-        return ads[index]
+    func getCellInfo(at index: Int) -> AdModel {
+        return filteredAds[index]
+    }
+
+    func refresh(category: CategoryModel, updateData: @escaping (() -> Void)) {
+        filteredAds = ads.filter({ $0.categoryName == category.name })
+        updateData()
     }
 }

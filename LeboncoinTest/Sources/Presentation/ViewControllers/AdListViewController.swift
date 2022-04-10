@@ -13,7 +13,6 @@ class AdListViewController: UIViewController {
 
     private let viewModel: AdListViewModel
     weak var coordinator: AdListCoordinator?
-    private var dataSource: TableViewDataSource<AdModel, AdListTableViewCell>?
 
     // MARK: - UI Elements
 
@@ -24,6 +23,7 @@ class AdListViewController: UIViewController {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.tableFooterView = UIView()
         tableView.tableHeaderView = UIView()
+        tableView.dataSource = self
         tableView.delegate = self
 
         return tableView
@@ -89,27 +89,40 @@ class AdListViewController: UIViewController {
     private func loadAds() {
         Task { @MainActor in
             await viewModel.getAds()
-            adsDidLoad(viewModel.ads)
-
             self.tableView.reloadData()
         }
     }
 
-    private func adsDidLoad(_ ads: [AdModel]) {
-        dataSource = TableViewDataSource(models: ads,
-                                         reuseIdentifier: AdListTableViewCell.reusableID) { adModel, cell in
-            cell.configureCell(using: adModel)
-            cell.selectionStyle = .none
-            cell.backgroundColor = .clear
-        }
-
-        tableView.dataSource = dataSource
-    }
-
     private func bindData() {
         coordinator?.updateCategory = { category in
-            print(category)
+            self.viewModel.refresh(category: category) {
+                self.tableView.reloadData()
+            }
         }
+    }
+}
+
+// MARK: - extension UITableViewDatasource
+
+extension AdListViewController: UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        viewModel.numberOfTableViewItems
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: AdListTableViewCell.reusableID,
+                                                       for: indexPath) as? AdListTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        let ads = viewModel.getCellInfo(at: indexPath.row)
+        cell.configureCell(using: ads)
+        cell.selectionStyle = .none
+        cell.backgroundColor = .clear
+
+        return cell
     }
 }
 
@@ -118,7 +131,7 @@ class AdListViewController: UIViewController {
 extension AdListViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let adDetail = viewModel.didTapAdCell(at: indexPath.row)
+        let adDetail = viewModel.getCellInfo(at: indexPath.row)
         coordinator?.didTapCell(adDetail)
     }
 }
