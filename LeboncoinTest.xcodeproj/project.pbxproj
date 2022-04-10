@@ -24,6 +24,11 @@
 		3D60940928021155007CC14A /* AdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60940828021155007CC14A /* AdDetailViewController.swift */; };
 		3D60940B28021186007CC14A /* AdDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60940A28021186007CC14A /* AdDetailViewModel.swift */; };
 		3D60940D280223C8007CC14A /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60940C280223C8007CC14A /* PaddingLabel.swift */; };
+		3D791C822802E51F006F1F1C /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D791C812802E51F006F1F1C /* CategoryRepository.swift */; };
+		3D791C842802E557006F1F1C /* CategoryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D791C832802E557006F1F1C /* CategoryProtocols.swift */; };
+		3D791C862802E57A006F1F1C /* CategoryDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D791C852802E57A006F1F1C /* CategoryDomain.swift */; };
+		3D791C882802E5E6006F1F1C /* CategoryData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D791C872802E5E6006F1F1C /* CategoryData+Extension.swift */; };
+		3D791C8A2802E625006F1F1C /* CategoryUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D791C892802E625006F1F1C /* CategoryUsecase.swift */; };
 		3D933FDB2800E36B0002B11D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDA2800E36B0002B11D /* AppDelegate.swift */; };
 		3D933FDD2800E36B0002B11D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDC2800E36B0002B11D /* SceneDelegate.swift */; };
 		3D933FE42800E36E0002B11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D933FE32800E36E0002B11D /* Assets.xcassets */; };
@@ -98,6 +103,11 @@
 		3D60940828021155007CC14A /* AdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailViewController.swift; sourceTree = "<group>"; };
 		3D60940A28021186007CC14A /* AdDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDetailViewModel.swift; sourceTree = "<group>"; };
 		3D60940C280223C8007CC14A /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		3D791C812802E51F006F1F1C /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
+		3D791C832802E557006F1F1C /* CategoryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProtocols.swift; sourceTree = "<group>"; };
+		3D791C852802E57A006F1F1C /* CategoryDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDomain.swift; sourceTree = "<group>"; };
+		3D791C872802E5E6006F1F1C /* CategoryData+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryData+Extension.swift"; sourceTree = "<group>"; };
+		3D791C892802E625006F1F1C /* CategoryUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryUsecase.swift; sourceTree = "<group>"; };
 		3D933FD72800E36B0002B11D /* LeboncoinTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeboncoinTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D933FDA2800E36B0002B11D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D933FDC2800E36B0002B11D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				3D4DA13C28010C290039EE02 /* AdRepository.swift */,
+				3D791C812802E51F006F1F1C /* CategoryRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -208,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				3D4DA14428010E560039EE02 /* AdProtocols.swift */,
+				3D791C832802E557006F1F1C /* CategoryProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -216,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				3D4DA14728010E820039EE02 /* AdDomain.swift */,
+				3D791C852802E57A006F1F1C /* CategoryDomain.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				3D4DA14A28010ECB0039EE02 /* AdData+Extension.swift */,
+				3D791C872802E5E6006F1F1C /* CategoryData+Extension.swift */,
 			);
 			path = Mappers;
 			sourceTree = "<group>";
@@ -401,6 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				3D98869F280184A500FF8D10 /* AdUsecase.swift */,
+				3D791C892802E625006F1F1C /* CategoryUsecase.swift */,
 			);
 			path = Usecases;
 			sourceTree = "<group>";
@@ -649,12 +664,14 @@
 				3D9340152800EA820002B11D /* ServiceError.swift in Sources */,
 				3D9886A428018AC800FF8D10 /* Logger.swift in Sources */,
 				3D9340132800EA710002B11D /* HTTPMethod.swift in Sources */,
+				3D791C8A2802E625006F1F1C /* CategoryUsecase.swift in Sources */,
 				3D4DA14528010E560039EE02 /* AdProtocols.swift in Sources */,
 				3D9340242800F4750002B11D /* AdRequest.swift in Sources */,
 				3DD966702801C7D1002A3834 /* UITableViewCell+Extension.swift in Sources */,
 				3D60940D280223C8007CC14A /* PaddingLabel.swift in Sources */,
 				3D93402D2800F61E0002B11D /* AdDataImageURL.swift in Sources */,
 				3D9886B72801B0FA00FF8D10 /* Localizable.swift in Sources */,
+				3D791C822802E51F006F1F1C /* CategoryRepository.swift in Sources */,
 				3D9340222800F3FD0002B11D /* AdService.swift in Sources */,
 				3D9886B1280199D800FF8D10 /* AdListCoordinator.swift in Sources */,
 				3D60940B28021186007CC14A /* AdDetailViewModel.swift in Sources */,
@@ -662,6 +679,7 @@
 				3D9886CA2801C00200FF8D10 /* AdModel.swift in Sources */,
 				3D4DA14E280111000039EE02 /* DateFormatter+Extension.swift in Sources */,
 				3D9886AF2801997500FF8D10 /* CoordinatorProtocol.swift in Sources */,
+				3D791C842802E557006F1F1C /* CategoryProtocols.swift in Sources */,
 				3D4DA133280108D20039EE02 /* CategoryData.swift in Sources */,
 				3D9340192800EAF10002B11D /* NetworkClientProtocol.swift in Sources */,
 				3D4DA13D28010C290039EE02 /* AdRepository.swift in Sources */,
@@ -672,9 +690,11 @@
 				3DD9666E2801C7A2002A3834 /* ReusableViewProtocol.swift in Sources */,
 				3D4DA131280108910039EE02 /* CategoryService.swift in Sources */,
 				3D9886CC2801C02500FF8D10 /* AdDomain+Extension.swift in Sources */,
+				3D791C882802E5E6006F1F1C /* CategoryData+Extension.swift in Sources */,
 				3D4DA13F28010D650039EE02 /* AdServiceProtocol.swift in Sources */,
 				3D4DA150280111F00039EE02 /* String+Extension.swift in Sources */,
 				3D9886BF2801B58000FF8D10 /* UIColor+Extension.swift in Sources */,
+				3D791C862802E57A006F1F1C /* CategoryDomain.swift in Sources */,
 				3D9886AD2801995200FF8D10 /* AppCoordinator.swift in Sources */,
 				3D4DA14128010D8A0039EE02 /* CategoryServiceProtocol.swift in Sources */,
 				3DD966692801C6FD002A3834 /* AdListTableViewCell.swift in Sources */,
