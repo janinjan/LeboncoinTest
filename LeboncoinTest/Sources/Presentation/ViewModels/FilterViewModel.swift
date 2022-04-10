@@ -30,4 +30,8 @@ final class FilterViewModel {
     func getCategories() async {
         categories = await categoryUsecase.retrieveCategories().map({$0.toUI})
     }
+
+    func didTapCategoryCell(at index: Int) -> CategoryModel {
+        return categories[index]
+    }
 }

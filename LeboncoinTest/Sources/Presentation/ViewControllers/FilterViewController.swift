@@ -14,6 +14,7 @@ class FilterViewController: UIViewController {
     private let viewModel: FilterViewModel
     weak var coordinator: FilterCoordinator?
     private var dataSource: TableViewDataSource<CategoryModel, FilterTableViewCell>?
+    private var selectedCategory: CategoryModel?
 
     // MARK: - UI Elements
 
@@ -77,6 +78,10 @@ class FilterViewController: UIViewController {
     }
 
     @objc func didTapConfirmButtonItem() {
+        if let category = selectedCategory {
+            coordinator?.selectedFilter(filter: category)
+        }
+
         coordinator?.dismissViewController()
     }
 
@@ -90,7 +95,7 @@ class FilterViewController: UIViewController {
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
-    
+
     private func loadCategories() {
         Task { @MainActor in
             await viewModel.getCategories()
@@ -118,6 +123,8 @@ class FilterViewController: UIViewController {
 extension FilterViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        let currentCategory = viewModel.didTapCategoryCell(at: indexPath.row)
+        selectedCategory = currentCategory
     }
 
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {

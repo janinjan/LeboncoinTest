@@ -14,6 +14,7 @@ final class AdListCoordinator: Coordinator {
     let navigationController: UINavigationController
     let parentCoordinator: Coordinator?
     lazy var childCoordinators: [Coordinator] = []
+    var updateCategory: ((CategoryModel) -> Void)?
 
     // MARK: - Initializer
 
@@ -44,6 +45,7 @@ final class AdListCoordinator: Coordinator {
     func startFilter() {
         let filterCoordinator = FilterCoordinator(navController: navigationController, parentCoordinator: self)
         childCoordinators.append(filterCoordinator)
+        filterCoordinator.delegate = self
         filterCoordinator.start()
     }
 
@@ -78,5 +80,13 @@ final class AdListCoordinator: Coordinator {
 
     func childDidFinish(_ child: Coordinator) {
         removeChild(child)
+    }
+}
+
+// MARK: - extension CategorySelectionDelegate
+
+extension AdListCoordinator: CategorySelectionDelegate {
+    func selectedFilter(filter: CategoryModel) {
+        updateCategory?(filter)
     }
 }

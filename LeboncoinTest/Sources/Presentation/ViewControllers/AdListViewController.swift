@@ -50,6 +50,7 @@ class AdListViewController: UIViewController {
         setupUI()
         loadAds()
         setupTableView()
+        bindData()
     }
 
     // MARK: - Methods
@@ -103,6 +104,12 @@ class AdListViewController: UIViewController {
         }
 
         tableView.dataSource = dataSource
+    }
+
+    private func bindData() {
+        coordinator?.updateCategory = { category in
+            print(category)
+        }
     }
 }
 

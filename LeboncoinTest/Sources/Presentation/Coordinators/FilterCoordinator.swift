@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol CategorySelectionDelegate: AnyObject {
+    func selectedFilter(filter: CategoryModel)
+}
+
 final class FilterCoordinator: Coordinator {
 
     // MARK: - Properties
@@ -14,6 +18,7 @@ final class FilterCoordinator: Coordinator {
     let navigationController: UINavigationController
     weak var parentCoordinator: Coordinator?
     lazy var childCoordinators: [Coordinator] = []
+    weak var delegate: CategorySelectionDelegate?
 
     // MARK: - Initializer
 
@@ -30,6 +35,10 @@ final class FilterCoordinator: Coordinator {
 
         let navigationCustom = UINavigationController(rootViewController: filterViewController)
         navigationController.present(navigationCustom, animated: true, completion: nil)
+    }
+
+    func selectedFilter(filter: CategoryModel) {
+        delegate?.selectedFilter(filter: filter)
     }
 
     func dismissViewController() {
