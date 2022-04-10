@@ -15,6 +15,8 @@ class AdListViewController: UIViewController {
     weak var coordinator: AdListCoordinator?
     private var dataSource: TableViewDataSource<AdModel, AdListTableViewCell>?
 
+    // MARK: - UI Elements
+
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -26,6 +28,8 @@ class AdListViewController: UIViewController {
 
         return tableView
     }()
+
+    private var filterBarButtonItem = UIBarButtonItem()
 
     // MARK: - Initializer
 
@@ -53,6 +57,21 @@ class AdListViewController: UIViewController {
     private func setupUI() {
         title = viewModel.title
         view.backgroundColor = .lbcWhite
+        setupBarButtonItem()
+    }
+
+    private func setupBarButtonItem() {
+        filterBarButtonItem = UIBarButtonItem(
+            title: viewModel.filterButtonText,
+            style: .plain,
+            target: self,
+            action: #selector(didTapFilterButtonItem))
+
+        navigationItem.rightBarButtonItem = filterBarButtonItem
+    }
+
+    @objc func didTapFilterButtonItem() {
+        coordinator?.didTapFilterButtonItem()
     }
 
     private func setupTableView() {

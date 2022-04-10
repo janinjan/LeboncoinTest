@@ -32,6 +32,8 @@
 		3D791C8C2802E704006F1F1C /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D791C8B2802E704006F1F1C /* FilterViewModel.swift */; };
 		3D791C8E2802E75D006F1F1C /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D791C8D2802E75D006F1F1C /* CategoryModel.swift */; };
 		3D791C902802E78D006F1F1C /* CategoryDomain+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D791C8F2802E78D006F1F1C /* CategoryDomain+Extension.swift */; };
+		3D791C982802EB04006F1F1C /* FilterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D791C972802EB04006F1F1C /* FilterCoordinator.swift */; };
+		3D791C9A2802EB3E006F1F1C /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D791C992802EB3E006F1F1C /* FilterViewController.swift */; };
 		3D933FDB2800E36B0002B11D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDA2800E36B0002B11D /* AppDelegate.swift */; };
 		3D933FDD2800E36B0002B11D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D933FDC2800E36B0002B11D /* SceneDelegate.swift */; };
 		3D933FE42800E36E0002B11D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D933FE32800E36E0002B11D /* Assets.xcassets */; };
@@ -114,6 +116,8 @@
 		3D791C8B2802E704006F1F1C /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		3D791C8D2802E75D006F1F1C /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		3D791C8F2802E78D006F1F1C /* CategoryDomain+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryDomain+Extension.swift"; sourceTree = "<group>"; };
+		3D791C972802EB04006F1F1C /* FilterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCoordinator.swift; sourceTree = "<group>"; };
+		3D791C992802EB3E006F1F1C /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		3D933FD72800E36B0002B11D /* LeboncoinTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeboncoinTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D933FDA2800E36B0002B11D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D933FDC2800E36B0002B11D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -441,6 +445,7 @@
 			children = (
 				3D9886A92801980600FF8D10 /* AdListViewController.swift */,
 				3D60940828021155007CC14A /* AdDetailViewController.swift */,
+				3D791C992802EB3E006F1F1C /* FilterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -451,6 +456,7 @@
 				3D9886AC2801995200FF8D10 /* AppCoordinator.swift */,
 				3D9886AE2801997500FF8D10 /* CoordinatorProtocol.swift */,
 				3D9886B0280199D800FF8D10 /* AdListCoordinator.swift */,
+				3D791C972802EB04006F1F1C /* FilterCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -684,6 +690,7 @@
 				3D791C822802E51F006F1F1C /* CategoryRepository.swift in Sources */,
 				3D9340222800F3FD0002B11D /* AdService.swift in Sources */,
 				3D9886B1280199D800FF8D10 /* AdListCoordinator.swift in Sources */,
+				3D791C9A2802EB3E006F1F1C /* FilterViewController.swift in Sources */,
 				3D60940B28021186007CC14A /* AdDetailViewModel.swift in Sources */,
 				3DD9666B2801C75D002A3834 /* UITableView+Extension.swift in Sources */,
 				3D9886CA2801C00200FF8D10 /* AdModel.swift in Sources */,
@@ -710,6 +717,7 @@
 				3D4DA14128010D8A0039EE02 /* CategoryServiceProtocol.swift in Sources */,
 				3DD966692801C6FD002A3834 /* AdListTableViewCell.swift in Sources */,
 				3D4DA14828010E820039EE02 /* AdDomain.swift in Sources */,
+				3D791C982802EB04006F1F1C /* FilterCoordinator.swift in Sources */,
 				3D791C8C2802E704006F1F1C /* FilterViewModel.swift in Sources */,
 				3D4DA12F280108680039EE02 /* CategoryRequest.swift in Sources */,
 				3D93401E2800EC320002B11D /* URLSession+Extension.swift in Sources */,

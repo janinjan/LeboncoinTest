@@ -41,8 +41,18 @@ final class AdListCoordinator: Coordinator {
         navigationController.pushViewController(adDetailViewController, animated: true)
     }
 
+    func startFilter() {
+        let filterCoordinator = FilterCoordinator(navController: navigationController, parentCoordinator: self)
+        childCoordinators.append(filterCoordinator)
+        filterCoordinator.start()
+    }
+
     func didTapCell(_ adDetail: AdModel) {
         startDetail(with: adDetail)
+    }
+
+    func didTapFilterButtonItem() {
+        startFilter()
     }
 
     private func setupAdListViewModelDependencies() -> AdListViewModel {
@@ -64,5 +74,9 @@ final class AdListCoordinator: Coordinator {
         let navigationBar = navigationController.navigationBar
         navigationBar.standardAppearance = appearance
         navigationBar.scrollEdgeAppearance = appearance
+    }
+
+    func childDidFinish(_ child: Coordinator) {
+        removeChild(child)
     }
 }

@@ -12,6 +12,7 @@ final class AdListViewModel {
     // MARK: - Properties
     
     let title = Strings.adListTitle
+    let filterButtonText = Strings.filter
     var ads: [AdModel] = []
     
     // MARK: - Usecases
