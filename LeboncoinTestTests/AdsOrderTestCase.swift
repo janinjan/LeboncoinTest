@@ -10,7 +10,7 @@ import XCTest
 
 class AdsOrderTestCase: XCTestCase {
 
-    func test_GivenAds_whenRetrieveAds_thenItShoulSortAdsByUrgencyAndDate() async {
+    func test_givenAds_whenRetrieveAds_thenItShoulSortAdsByUrgencyAndDate() async {
         let mockAdRepository: AdRepositoryProtocol = MockAdRepository()
         let adUsecase = AdUsecase(repository: mockAdRepository)
 
@@ -19,7 +19,7 @@ class AdsOrderTestCase: XCTestCase {
         XCTAssertEqual(filteredAds.first?.id, 5)
     }
 
-    func test_GivendAds_whenRetrieveAds_thenItShouldSortAdsByDate() async {
+    func test_givendAds_whenRetrieveAds_thenItShouldSortAdsByDate() async {
         let mockAdRepository: AdRepositoryProtocol = MockAdRepository()
         let adUsecase = AdUsecase(repository: mockAdRepository)
 
