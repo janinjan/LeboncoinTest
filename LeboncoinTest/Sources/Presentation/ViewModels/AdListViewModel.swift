@@ -43,7 +43,7 @@ final class AdListViewModel {
     // MARK: - Methods
     
     func getAds() async {
-        ads = await adUsecase.retrieveAds().map({$0.toUI})
+        ads = await adUsecase.retrieveAds().map({$0.toAdModel})
         filteredAds = ads
     }
     

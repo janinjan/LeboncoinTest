@@ -8,7 +8,8 @@
 
 "AdListTitle" = "Annonces";
 "UrgentAd" = "Urgent";
-"Filter" = "Filtre";
+"Filter" = "Filtrer";
+"FilterTitle" = "Filtre";
 "Confirm" = "OK";
 "Reset" = "Réinitialiser";
 "Description" = "Description";

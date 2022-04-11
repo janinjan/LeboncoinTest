@@ -18,7 +18,7 @@ extension DateFormatter {
 
     static let shortDateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
-        dateFormatter.timeZone = .current
+        dateFormatter.locale = .current
         dateFormatter.dateStyle = .short
         dateFormatter.timeStyle = .short
         

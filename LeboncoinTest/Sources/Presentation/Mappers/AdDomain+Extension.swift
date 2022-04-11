@@ -9,7 +9,7 @@ import Foundation
 
 extension AdDomain {
 
-    var toUI: AdModel {
+    var toAdModel: AdModel {
         AdModel(categoryName: categoryName,
                 title: title,
                 description: description,

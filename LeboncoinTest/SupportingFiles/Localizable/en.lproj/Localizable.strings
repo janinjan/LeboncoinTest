@@ -9,6 +9,7 @@
 "AdListTitle" = "Announcements";
 "UrgentAd" = "Urgent";
 "Filter" = "Filter";
+"FilterTitle" = "Filter";
 "Confirm" = "OK";
 "Reset" = "Reset";
 "Description" = "Description";

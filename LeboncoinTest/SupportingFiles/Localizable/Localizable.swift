@@ -33,6 +33,7 @@ enum Strings {
     @Localizable static private(set) var adListTitle = "AdListTitle"
     @Localizable static private(set) var urgentAd = "UrgentAd"
     @Localizable static private(set) var filter = "Filter"
+    @Localizable static private(set) var filterTitle = "FilterTitle"
     @Localizable static private(set) var confirm = "Confirm"
     @Localizable static private(set) var reset = "Reset"
     @Localizable static private(set) var description = "Description"

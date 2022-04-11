@@ -9,7 +9,7 @@ import Foundation
 
 extension CategoryDomain {
 
-    var toUI: CategoryModel {
+    var toCategoryModel: CategoryModel {
         CategoryModel(id: id, name: name)
     }
 }

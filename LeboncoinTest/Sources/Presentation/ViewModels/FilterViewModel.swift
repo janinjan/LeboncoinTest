@@ -11,7 +11,7 @@ final class FilterViewModel {
     
     // MARK: - Properties
     
-    let title = Strings.filter
+    let title = Strings.filterTitle
     let confirmButtonText = Strings.confirm
     var categories: [CategoryModel] = []
     
@@ -28,7 +28,7 @@ final class FilterViewModel {
     // MARK: - Methods
     
     func getCategories() async {
-        categories = await categoryUsecase.retrieveCategories().map({$0.toUI})
+        categories = await categoryUsecase.retrieveCategories().map({$0.toCategoryModel})
     }
 
     func didTapCategoryCell(at index: Int) -> CategoryModel {
