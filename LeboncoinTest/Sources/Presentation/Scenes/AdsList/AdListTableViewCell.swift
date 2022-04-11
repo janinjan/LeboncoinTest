@@ -93,6 +93,11 @@ class AdListTableViewCell: UITableViewCell {
 
     // MARK: - Methods
 
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        adImageView.image = nil
+    }
+
     func configureCell(using model: AdModel) {
         titleLabel.text = model.title
         categoryLabel.text = model.categoryName
@@ -102,6 +107,8 @@ class AdListTableViewCell: UITableViewCell {
 
         if let image = model.imageThumbURL {
             adImageView.urlImage(image)
+        } else {
+            adImageView.image = UIImage(named: "placeholder")
         }
     }
 

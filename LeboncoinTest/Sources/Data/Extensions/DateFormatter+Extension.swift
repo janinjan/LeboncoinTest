@@ -18,8 +18,8 @@ extension DateFormatter {
 
     static let shortDateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
-        dateFormatter.locale = .current
-        dateFormatter.dateStyle = .short
+        dateFormatter.locale = Locale(identifier: "FR-fr")
+        dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .short
         
         return dateFormatter

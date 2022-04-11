@@ -45,8 +45,9 @@ class AdDetailViewController: UIViewController {
     }()
 
     lazy var titleLabel: UILabel = {
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 60))
+        let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.adjustsFontSizeToFitWidth = true
         label.font = .systemFont(ofSize: 20, weight: .semibold)
         label.textColor = .lbcGrey800
         label.numberOfLines = 0
@@ -182,6 +183,8 @@ class AdDetailViewController: UIViewController {
 
         if let image = adDetail.imageThumbURL {
             adImageView.urlImage(image)
+        } else {
+            adImageView.image = UIImage(named: "placeholder")
         }
 
         titleLabel.text = adDetail.title

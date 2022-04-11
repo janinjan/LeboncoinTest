@@ -10,7 +10,7 @@ import UIKit
 extension UIImageView {
 
     func urlImage(_ imageURL: String?) {
-        self.image = UIImage(named: "cellLoading")
+        self.image = UIImage(named: "placeholder")
         guard let imageURL = imageURL, let url = URL(string: imageURL) else { return }
 
         ImageRequestSession.shared.fetchImage(url: url) { (result: Result<UIImage, Error>) in
@@ -18,7 +18,7 @@ extension UIImageView {
             case .success(let image):
                 self.image = image
             case .failure:
-                self.image = UIImage(named: "cellLoading")
+                self.image = UIImage(named: "placeholder")
             }
         }
     }
