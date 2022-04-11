@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 final class AdListViewModel {
     
@@ -20,6 +21,14 @@ final class AdListViewModel {
     var numberOfTableViewItems: Int {
         return filteredAds.count
     }
+
+    private var isAdsFiltered: Bool {
+        return ads == filteredAds ? false: true
+    }
+
+    // MARK: - Publishers
+
+    let resetPublisher = PassthroughSubject<Bool, Never>()
     
     // MARK: - Usecases
     
@@ -46,5 +55,12 @@ final class AdListViewModel {
         filteredAds = ads.filter({ $0.categoryName == category.name })
         title = category.name
         updateData()
+        resetPublisher.send(isAdsFiltered)
+    }
+
+    func resetFilter() {
+        filteredAds = ads
+        title = Strings.adListTitle
+        resetPublisher.send(isAdsFiltered)
     }
 }

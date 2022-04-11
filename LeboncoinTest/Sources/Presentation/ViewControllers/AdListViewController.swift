@@ -6,13 +6,22 @@
 //
 
 import UIKit
+import Combine
 
 class AdListViewController: UIViewController {
+
+    // MARK: - Property wrappers
+
+    @Published private var isResetEnabled: Bool = false
 
     // MARK: - Properties
 
     private let viewModel: AdListViewModel
     weak var coordinator: AdListCoordinator?
+
+    // MARK: - Subscribers
+
+    private var resetSubscriber: AnyCancellable?
 
     // MARK: - UI Elements
 
@@ -85,7 +94,9 @@ class AdListViewController: UIViewController {
     }
 
     @objc func didTapResetButtonItem() {
-        // TODO: reset filter
+        viewModel.resetFilter()
+        title = viewModel.title
+        tableView.reloadData()
     }
 
     private func setupTableView() {
@@ -111,8 +122,16 @@ class AdListViewController: UIViewController {
             self.viewModel.refresh(category: category) {
                 self.tableView.reloadData()
                 self.title = self.viewModel.title
+                self.toggleResetBarButton()
             }
         }
+    }
+
+    private func toggleResetBarButton() {
+        resetSubscriber = viewModel.resetPublisher
+            .sink { [weak self] value in
+                self?.navigationItem.leftBarButtonItem?.isEnabled = value
+            }
     }
 }
 

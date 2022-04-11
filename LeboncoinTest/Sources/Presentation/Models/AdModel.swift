@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct AdModel {
+struct AdModel: Equatable {
     var categoryName: String
     let title: String
     let description: String
