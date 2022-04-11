@@ -106,6 +106,20 @@ class AdDetailViewController: UIViewController {
         return textView
     }()
 
+    lazy var urgentLabel: UILabel = {
+        let label = PaddingLabel(top: 4, left: 8, bottom: 4, right: 8)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 12, weight: .semibold)
+        label.textColor = .white
+        label.textAlignment = .center
+        label.backgroundColor = .lbcPaleOrange
+        label.numberOfLines = 1
+        label.layer.cornerRadius = 5
+        label.layer.masksToBounds = true
+
+        return label
+    }()
+
     // MARK: - Initializer
 
     init(viewModel: AdDetailViewModel) {
@@ -134,6 +148,7 @@ class AdDetailViewController: UIViewController {
         let view = UIView()
         view.addSubview(scrollView)
         scrollView.addSubview(stackView)
+        scrollView.addSubview(urgentLabel)
 
         scrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
@@ -148,6 +163,8 @@ class AdDetailViewController: UIViewController {
         stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor).isActive = true
 
         adImageView.heightAnchor.constraint(equalToConstant: UIDevice.current.userInterfaceIdiom == .pad ? 600 : 300).isActive = true
+        urgentLabel.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -4).isActive = true
+        urgentLabel.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 8).isActive = true
 
         stackView.addArrangedSubview(adImageView)
         stackView.addArrangedSubview(titleLabel)
@@ -173,5 +190,7 @@ class AdDetailViewController: UIViewController {
         dateLabel.text = adDetail.creationDate
         descriptionLabel.text = viewModel.descriptionText
         descriptionTextView.text = adDetail.description
+        urgentLabel.text = adDetail.isUrgent ? Strings.urgentAd : ""
+        urgentLabel.isHidden = adDetail.isUrgent ? false : true
     }
 }

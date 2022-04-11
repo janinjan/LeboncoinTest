@@ -110,6 +110,7 @@ class AdListViewController: UIViewController {
         coordinator?.updateCategory = { category in
             self.viewModel.refresh(category: category) {
                 self.tableView.reloadData()
+                self.title = self.viewModel.title
             }
         }
     }

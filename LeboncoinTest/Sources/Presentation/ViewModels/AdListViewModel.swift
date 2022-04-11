@@ -11,7 +11,7 @@ final class AdListViewModel {
     
     // MARK: - Properties
     
-    let title = Strings.adListTitle
+    var title = Strings.adListTitle
     let filterButtonText = Strings.filter
     let resetButtonText = Strings.reset
     var ads: [AdModel] = []
@@ -44,6 +44,7 @@ final class AdListViewModel {
 
     func refresh(category: CategoryModel, updateData: @escaping (() -> Void)) {
         filteredAds = ads.filter({ $0.categoryName == category.name })
+        title = category.name
         updateData()
     }
 }
