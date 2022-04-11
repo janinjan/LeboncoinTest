@@ -12,6 +12,7 @@ final class AdDetailViewModel {
     // MARK: - Properties
 
     let adDetail: AdModel
+    let descriptionText = Strings.description
 
     // MARK: - Initializer
 

@@ -3,7 +3,7 @@
   LeboncoinTest
 
   Created by Janin Culhaoglu on 09/04/2022.
-  
+
 */
 
 "AdListTitle" = "Annonces";
@@ -11,3 +11,4 @@
 "Filter" = "Filtre";
 "Confirm" = "OK";
 "Reset" = "Réinitialiser";
+"Description" = "Description";
