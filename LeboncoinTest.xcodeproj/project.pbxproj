@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2355332804830E003124EC /* AdsOrderTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2355322804830E003124EC /* AdsOrderTestCase.swift */; };
 		3D4DA12F280108680039EE02 /* CategoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA12E280108680039EE02 /* CategoryRequest.swift */; };
 		3D4DA131280108910039EE02 /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA130280108910039EE02 /* CategoryService.swift */; };
 		3D4DA133280108D20039EE02 /* CategoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA132280108D20039EE02 /* CategoryData.swift */; };
@@ -93,6 +94,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D2355322804830E003124EC /* AdsOrderTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsOrderTestCase.swift; sourceTree = "<group>"; };
 		3D4DA12E280108680039EE02 /* CategoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRequest.swift; sourceTree = "<group>"; };
 		3D4DA130280108910039EE02 /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
 		3D4DA132280108D20039EE02 /* CategoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryData.swift; sourceTree = "<group>"; };
@@ -191,6 +193,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D2355362804B7C9003124EC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3D9340302800F7D00002B11D /* FakeResponseData.swift */,
+				3D93402E2800F7930002B11D /* URLSessionFake.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		3D4DA12D280108500039EE02 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,10 +308,10 @@
 		3D933FF02800E36F0002B11D /* LeboncoinTestTests */ = {
 			isa = PBXGroup;
 			children = (
+				3D2355362804B7C9003124EC /* Helpers */,
 				3D4DA1342801091F0039EE02 /* CategoryServiceTests */,
 				3D9340342800F9050002B11D /* AdServiceTests */,
-				3D93402E2800F7930002B11D /* URLSessionFake.swift */,
-				3D9340302800F7D00002B11D /* FakeResponseData.swift */,
+				3D2355322804830E003124EC /* AdsOrderTestCase.swift */,
 			);
 			path = LeboncoinTestTests;
 			sourceTree = "<group>";
@@ -744,6 +755,7 @@
 				3D93402F2800F7930002B11D /* URLSessionFake.swift in Sources */,
 				3D9340312800F7D00002B11D /* FakeResponseData.swift in Sources */,
 				3D4DA13A280109760039EE02 /* CategoryServiceTestCase.swift in Sources */,
+				3D2355332804830E003124EC /* AdsOrderTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

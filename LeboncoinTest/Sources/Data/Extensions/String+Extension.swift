@@ -9,7 +9,7 @@ import Foundation
 
 extension String {
 
-    var toDate: Date {
+    var toDateFromISO8601: Date {
         return DateFormatter.iso8601DateFormatter.date(from: self) ?? Date()
     }
 }

@@ -17,7 +17,7 @@ extension AdData {
                  price: price,
                  imageSmallURL: imagesURL.small,
                  imageThumbURL: imagesURL.thumb,
-                 creationDate: creationDate.toDate,
+                 creationDate: creationDate.toDateFromISO8601,
                  isUrgent: isUrgent)
     }
 

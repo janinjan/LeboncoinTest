@@ -9,7 +9,6 @@ import Foundation
 
 protocol AdUsecaseProtocol {
     func retrieveAds() async -> [AdDomain]
-    func sortAds(_ ads: [AdDomain]) -> [AdDomain]
 }
 
 protocol AdRepositoryProtocol {
